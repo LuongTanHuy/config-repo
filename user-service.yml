@@ -36,3 +36,10 @@ management:
     web:
       exposure:
         include: "*"
+spring:
+  security:
+    user:
+      name: disabled
+      password: disabled
+    basic:
+      enabled: false
