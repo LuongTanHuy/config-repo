@@ -31,13 +31,19 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+# 👇 Actuator cấu hình đúng cách
 management:
   endpoints:
     web:
       exposure:
         include: "*"
   endpoint:
+    health:
+      show-details: always
     info:
       enabled: true
-    health:
-      enabled: true
+
+# 👇 Tắt spring security hoàn toàn
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
