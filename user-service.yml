@@ -30,21 +30,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.application.name}:${spring.cloud.client.hostname}:${server.port}
-    metadata-map:
-      instanceId: ${spring.application.name}:${spring.cloud.client.hostname}:${server.port}
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-spring:
-  security:
-    user:
-      name: disabled
-      password: disabled
-    basic:
-      enabled: false
