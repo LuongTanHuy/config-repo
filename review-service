@@ -41,3 +41,7 @@ logging:
 
 jwt:
   secret: RXJepdCKIwnq311kLbu0NVogcEvVYND6070KdxDdHBqCrwcIZY/emsEc5y+L4tTM1HJj9nLAYLedoGQrX5YLSg==
+
+review:
+  image:
+    path: D:/DA/Image_HvApple/reviews
