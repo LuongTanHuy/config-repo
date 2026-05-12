@@ -5,10 +5,10 @@ spring:
   application:
     name: review-service
 
-  datasource:
+   datasource:
     url: jdbc:postgresql://localhost:5432/hv_apple
     username: huyd
-    password: tanhuy9560
+    password: tanhuy09560
     driver-class-name: org.postgresql.Driver
 
   jpa:
